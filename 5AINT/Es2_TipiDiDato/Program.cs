@@ -11,6 +11,7 @@ namespace Es2_TipiDiDato
         static void Main(string[] args)
         {
             int n1 = 10;
+            string nome = "PIppo";
         }
     }
 }
