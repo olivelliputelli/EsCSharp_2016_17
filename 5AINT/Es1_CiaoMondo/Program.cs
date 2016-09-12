@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static System.Console;
 
 namespace Es1_CiaoMondo
 {
@@ -10,7 +7,10 @@ namespace Es1_CiaoMondo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ciao Mondo!!");
+            Write("Nome: ");
+            string nome = ReadLine();
+
+            Console.WriteLine($"Ciao {nome}!!");
         }
     }
 }
