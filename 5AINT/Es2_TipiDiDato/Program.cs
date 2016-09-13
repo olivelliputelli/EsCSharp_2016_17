@@ -10,8 +10,23 @@ namespace Es2_TipiDiDato
     {
         static void Main(string[] args)
         {
+            // Variabili e tipi di dato
+            double numero = 1.3E-25;
+
             int n1 = 10;
+            n1 = n1 + 2;
             string nome = "PIppo";
+            nome = nome + "!!!!!";
+            bool isNero = true; // &&, ||, !
+
+            var cognome = "Rossi";
+            var numero2 = 23.0D;
+
         }
+        public static int Massimo(int n1, int n2)
+        {
+            return (n1 < n2) ? n2 : n1;
+        }
+
     }
 }
