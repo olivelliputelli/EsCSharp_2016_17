@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static System.Console;
 
 namespace Es2_TipiDiDato
 {
@@ -10,7 +7,11 @@ namespace Es2_TipiDiDato
     {
         static void Main(string[] args)
         {
-            
+            double numero = 10.03D;
+            int n1 = 12;
+            float n3 = 23.0f;
+
+            numero = Convert.ToDouble(ReadLine());            
         }
     }
 }
