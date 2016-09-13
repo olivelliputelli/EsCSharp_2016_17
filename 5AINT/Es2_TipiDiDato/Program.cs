@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static System.Console;
 
 namespace Es2_TipiDiDato
 {
@@ -20,13 +17,7 @@ namespace Es2_TipiDiDato
             bool isNero = true; // &&, ||, !
 
             var cognome = "Rossi";
-            var numero2 = 23.0D;
-
+            var numero2 = 23.0D;       
         }
-        public static int Massimo(int n1, int n2)
-        {
-            return (n1 < n2) ? n2 : n1;
-        }
-
     }
 }
