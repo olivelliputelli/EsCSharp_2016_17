@@ -11,6 +11,15 @@ namespace Es3_StruttureDiControllo
             double[] numeri = { 2, 6, 7, -2 };
             WriteLine($"SommaFor = {SommaFor(numeri)} \nSommaForeach = {SommaForeach(numeri)}");
             ReadKey();
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public static int Massimo(int n1, int n2)
