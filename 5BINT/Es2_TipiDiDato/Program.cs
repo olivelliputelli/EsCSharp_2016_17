@@ -10,6 +10,7 @@ namespace Es2_TipiDiDato
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
