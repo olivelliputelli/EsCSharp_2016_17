@@ -19,7 +19,28 @@ namespace Es4_CicliFor
             for (int i = inizio; i < fine; i += passo)
             {
                 Console.WriteLine(i);
-            } 
+                if (i==7)
+                {
+                    WriteLine("sette!!!");
+                    break;
+                }
+                WriteLine("------------");
+            }
+            WriteLine("FINE!!");
+
+            for (int miaVariabile = 0; miaVariabile < length; miaVariabile++)
+            {
+
+            }
+
         }
+
+
+        static ulong Sommatoria(uint inizio, uint fine)
+        {
+            // Da implementare
+            return 1;
+        }
+
     }
 }
