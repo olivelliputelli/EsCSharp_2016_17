@@ -17,7 +17,12 @@ namespace Es2_TipiDiDato
             bool isNero = true; // &&, ||, !
 
             var cognome = "Rossi";
-            var numero2 = 23.0D;       
+            var numero2 = 23.0D;
+
+            var n3 = "12D";
+
+            int n4 = (int)numero2; // Casting 
+            numero2 = n4; 
         }
     }
 }

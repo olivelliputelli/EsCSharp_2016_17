@@ -18,7 +18,11 @@ namespace Es1_CiaoMondo
             Write("Nome: ");
             string nome = ReadLine(); // anche io sono un commento
 
-            WriteLine($"Ciao {nome}!!");
+            Write("Cognome: ");
+            string cognome = ReadLine();
+
+            WriteLine($"Ciao {nome} - {cognome}!!");
+            WriteLine("Ciao " + nome + " - " + cognome + "!!");
         }
     }
 }
