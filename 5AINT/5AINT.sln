@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Es3_StruttureDiControllo", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Es4_CicliFor", "Es4_CicliFor\Es4_CicliFor.csproj", "{24E00482-8BAD-4437-BF7C-60B591D51194}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Es5_Switch", "Es5_Switch\Es5_Switch.csproj", "{3B38AD31-5AA0-48E5-A81F-E048BC1DE6C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{24E00482-8BAD-4437-BF7C-60B591D51194}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24E00482-8BAD-4437-BF7C-60B591D51194}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24E00482-8BAD-4437-BF7C-60B591D51194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B38AD31-5AA0-48E5-A81F-E048BC1DE6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B38AD31-5AA0-48E5-A81F-E048BC1DE6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B38AD31-5AA0-48E5-A81F-E048BC1DE6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B38AD31-5AA0-48E5-A81F-E048BC1DE6C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
