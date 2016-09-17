@@ -31,7 +31,7 @@ namespace Es5_StreamReader
                     }                 
                 }
                 using (StreamWriter sw = new StreamWriter(@"Data\Numeri.txt", true))
-                {
+                {                    
                     sw.WriteLine();
                     sw.WriteLine("----------------");
                     sw.WriteLine($"Somma = {somma}");

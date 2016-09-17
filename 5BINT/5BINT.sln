@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Es5_StreamReader", "Es5_Str
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Es6_Switch", "Es6_Switch\Es6_Switch.csproj", "{37F7BF86-6B20-45B1-81A1-C6FAB103CE22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basi", "Basi\Basi.csproj", "{06687A08-EDC7-4E06-87CD-C020AF36D75D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{37F7BF86-6B20-45B1-81A1-C6FAB103CE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37F7BF86-6B20-45B1-81A1-C6FAB103CE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37F7BF86-6B20-45B1-81A1-C6FAB103CE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06687A08-EDC7-4E06-87CD-C020AF36D75D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06687A08-EDC7-4E06-87CD-C020AF36D75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06687A08-EDC7-4E06-87CD-C020AF36D75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06687A08-EDC7-4E06-87CD-C020AF36D75D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

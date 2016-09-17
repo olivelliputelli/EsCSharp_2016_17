@@ -6,3 +6,5 @@ Pippo
 Pluto
 6
 -6
+Minny
+-1
