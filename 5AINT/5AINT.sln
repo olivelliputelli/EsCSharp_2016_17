@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoluzioneEsercizio1ConFile"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ripasso_19_09", "Ripasso_19_09\Ripasso_19_09.csproj", "{D9A8487C-6441-4EFE-9C7D-F45D93762956}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Es7_Enum", "Es7_Enum\Es7_Enum.csproj", "{2B7DC19E-C898-4E1F-9586-25145B701363}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{D9A8487C-6441-4EFE-9C7D-F45D93762956}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9A8487C-6441-4EFE-9C7D-F45D93762956}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9A8487C-6441-4EFE-9C7D-F45D93762956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B7DC19E-C898-4E1F-9586-25145B701363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B7DC19E-C898-4E1F-9586-25145B701363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B7DC19E-C898-4E1F-9586-25145B701363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B7DC19E-C898-4E1F-9586-25145B701363}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
