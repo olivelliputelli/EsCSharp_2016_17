@@ -25,8 +25,7 @@ namespace Ripasso_19_09
             catch (DivideByZeroException)
             {
                 Console.WriteLine("NOON SI DIVIDE PER ZERO!!!!!!");
-            }
-            
+            }            
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
@@ -74,7 +73,6 @@ namespace Ripasso_19_09
                 Console.WriteLine("The file could not be read:");
                 Console.WriteLine(e.Message);
             }
-
         }
 
     }
