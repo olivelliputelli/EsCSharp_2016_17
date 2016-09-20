@@ -12,10 +12,12 @@ namespace EsFattoriale
         {
             //Console.Write("N: ");
             //byte n = byte.Parse(Console.ReadLine());
-            for (byte i = 0; i <= 100; i++)
-            {
-                Console.WriteLine(i + " --> " + Matematica.Fattoriale(i) + " ---> " + Matematica.FattorialeRic(i));
-            }
+            //for (byte i = 0; i <= 100; i++)
+            //{
+            //    Console.WriteLine(i + " --> " + Matematica.Fattoriale(i) + " ---> " + Matematica.FattorialeRic(i));
+            //}
+
+            Matematica.SpostaTorre(4, 1, 3, 2);
 
         }
     }

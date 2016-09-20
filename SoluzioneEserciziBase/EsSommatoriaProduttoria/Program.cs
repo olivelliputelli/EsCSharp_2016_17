@@ -22,7 +22,8 @@ namespace EsSommatoriaProduttoria
             }            
         }
         /// <summary>
-        /// Restituisce la sommatoria dei numeri tra due numeri specificati.
+        /// Restituisce la sommatoria dei numeri tra due numeri specificati 
+        /// oppure 0 se il primo numero è maggiore del secondo.
         /// </summary>
         /// <param name="inizio">Il valore iniziale dell'indice della sommatoria.</param>
         /// <param name="fine">Il valore finale dell'indice della sommatoria.</param>

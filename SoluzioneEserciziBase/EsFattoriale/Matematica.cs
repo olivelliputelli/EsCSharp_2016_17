@@ -31,5 +31,21 @@ namespace EsFattoriale
             else
                 return 1;
         }
+
+
+        public static void SpostaTorre(int nDischi, int da, int a, int perMezzoDi)
+        {
+            if(nDischi>1)
+            {
+                SpostaTorre(nDischi - 1, da, perMezzoDi, a);
+                SpostaDisco(da, a);
+                SpostaTorre(nDischi - 1, perMezzoDi, a, da);
+            }
+        }
+        static void SpostaDisco(int da, int a)
+        {
+            Console.WriteLine($"sposta un disco dalla colonna {da} alla colonna {a}");
+            Console.ReadLine();
+        }
     }
 }
