@@ -10,7 +10,6 @@ namespace Es7_Enum
     {
         static void Main(string[] args)
         {
-
             try
             {
                 string strColore;
@@ -37,7 +36,7 @@ namespace Es7_Enum
                     case Colore.Nero:
                         break;
                 }
-      
+
                 Console.WriteLine("Ciao Mondo!!!!!");
             }
             catch (Exception)
@@ -56,6 +55,6 @@ namespace Es7_Enum
         Bianco,
         Nero
     }
-    }
-
 }
+
+

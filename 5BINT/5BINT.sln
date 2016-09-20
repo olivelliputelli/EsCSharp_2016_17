@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Es6_Switch", "Es6_Switch\Es
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basi", "Basi\Basi.csproj", "{06687A08-EDC7-4E06-87CD-C020AF36D75D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Es7_Enum", "Es7_Enum\Es7_Enum.csproj", "{2146A2BF-5A95-4A30-899C-7AC5087193E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{06687A08-EDC7-4E06-87CD-C020AF36D75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06687A08-EDC7-4E06-87CD-C020AF36D75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06687A08-EDC7-4E06-87CD-C020AF36D75D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2146A2BF-5A95-4A30-899C-7AC5087193E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2146A2BF-5A95-4A30-899C-7AC5087193E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2146A2BF-5A95-4A30-899C-7AC5087193E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2146A2BF-5A95-4A30-899C-7AC5087193E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
