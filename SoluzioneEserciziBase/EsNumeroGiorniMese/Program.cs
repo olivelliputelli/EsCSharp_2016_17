@@ -17,20 +17,19 @@ namespace EsNumeroGiorniMese
             //    if (IsBisestile(anno)) // IsBisestile(anno) == true
             //        Console.WriteLine(anno);
             //}
-
             Mese mese;
             int numeroGiorni = 0;
             Console.Write("Mese (in lettere): ");
 
             /* Metodo con Parse() */
-            //try
-            //{
-            //    mese = (Mese)Enum.Parse(typeof(Mese), Console.ReadLine());
-            //}
-            //catch (Exception)
-            //{
-            //    Console.WriteLine($"Input non valido!");
-            //}
+            try
+            {
+                mese = (Mese)Enum.Parse(typeof(Mese), Console.ReadLine());
+            }
+            catch (Exception)
+            {
+                Console.WriteLine($"Input non valido!");
+            }
 
             /* Metodo con TryParse<>() */
             if (!Enum.TryParse<Mese>(Console.ReadLine(), out mese))
@@ -38,7 +37,7 @@ namespace EsNumeroGiorniMese
                 Console.WriteLine($"Input non valido!");
             }
             else
-            {                
+            {
                 switch (mese)
                 {
                     case Mese.Gennaio:
@@ -69,6 +68,11 @@ namespace EsNumeroGiorniMese
             }           
         }
 
+        /// <summary>
+        /// Restituisce se un anno è bisestile.
+        /// </summary>
+        /// <param name="anno">anno compreso tra 1900 e 3000.</param>
+        /// <returns>Vero se anno è bisestile.</returns>
         static bool IsBisestile(int anno)
         {
             if (!(anno >= 1900 && anno <= 3000))
