@@ -25,7 +25,8 @@ namespace DaNumeroALettere
             }  
         }
 
-        static string DaNumeroInCifreANumeroInLettere(int nInCifre)
+
+        public static string DaNumeroInCifreANumeroInLettere(int nInCifre)
         {
             if (!(nInCifre > 0 && nInCifre < 100))
                 throw new ArgumentOutOfRangeException(); 
