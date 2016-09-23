@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EsFattoriale
 {
@@ -17,8 +13,10 @@ namespace EsFattoriale
             //    Console.WriteLine(i + " --> " + Matematica.Fattoriale(i) + " ---> " + Matematica.FattorialeRic(i));
             //}
 
-            Matematica.SpostaTorre(4, 1, 3, 2);
+            //Matematica.SpostaTorre(4, 1, 3, 2);
             //Console.WriteLine("Produttoria = " + FunzioniUtili.Matematica.Produttoria(1, 5));
+
+            Console.WriteLine("5 sopra 3 = " + Matematica.CoefficienteBinomiale(5, 3));
         }
     }
 }

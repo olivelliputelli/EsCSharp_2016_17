@@ -4,7 +4,7 @@ namespace EsFattoriale
 {
     public static class Matematica
     {
-        public static ulong Fattoriale(byte n)
+        public static ulong Fattoriale(int n)
         {
             if (n > 64) //ulong non riesce a contenere 65!
                 throw new ArgumentOutOfRangeException();
@@ -16,6 +16,7 @@ namespace EsFattoriale
             }
             return fat;
         }
+
         /// <summary>
         /// Fattoriale ricorsivo
         /// </summary>
@@ -32,10 +33,9 @@ namespace EsFattoriale
                 return 1;
         }
 
-
         public static void SpostaTorre(int nDischi, int da, int a, int perMezzoDi)
         {
-            if(nDischi>1)
+            if (nDischi > 1)
             {
                 SpostaTorre(nDischi - 1, da, perMezzoDi, a);
                 SpostaDisco(da, a);
@@ -46,6 +46,14 @@ namespace EsFattoriale
         {
             Console.Write($"sposta un disco dalla colonna {da} alla colonna {a}");
             Console.ReadLine();
+        }
+
+        public static int CoefficienteBinomiale(int n, int k)
+        {
+            if (!(k >= 0 && k <= n))
+                throw new IndexOutOfRangeException();
+
+            return (int) Fattoriale(n) / (int) (Fattoriale(k) * Fattoriale(n - k));
         }
     }
 }

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsFattoriale", "EsFattorial
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaNumeroALettere", "DaNumeroALettere\DaNumeroALettere.csproj", "{BB15B4D4-8D82-4B86-AC01-1E4586546648}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaginaWeb", "PaginaWeb\PaginaWeb.csproj", "{1CB6F664-E957-42E0-BFF4-D07309C64C90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BB15B4D4-8D82-4B86-AC01-1E4586546648}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB15B4D4-8D82-4B86-AC01-1E4586546648}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB15B4D4-8D82-4B86-AC01-1E4586546648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CB6F664-E957-42E0-BFF4-D07309C64C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CB6F664-E957-42E0-BFF4-D07309C64C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CB6F664-E957-42E0-BFF4-D07309C64C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CB6F664-E957-42E0-BFF4-D07309C64C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
