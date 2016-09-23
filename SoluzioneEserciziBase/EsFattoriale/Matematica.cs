@@ -19,7 +19,7 @@ namespace EsFattoriale
         /// <summary>
         /// Fattoriale ricorsivo
         /// </summary>
-        /// <param name="n"></param>
+        /// <param name="n">numero compreso tra 1 e 64.</param>
         /// <returns></returns>
         public static ulong FattorialeRic(ulong n)
         {
@@ -44,7 +44,7 @@ namespace EsFattoriale
         }
         static void SpostaDisco(int da, int a)
         {
-            Console.WriteLine($"sposta un disco dalla colonna {da} alla colonna {a}");
+            Console.Write($"sposta un disco dalla colonna {da} alla colonna {a}");
             Console.ReadLine();
         }
     }

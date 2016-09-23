@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EsNumeroGiorniMese
 {
@@ -22,19 +18,19 @@ namespace EsNumeroGiorniMese
             Console.Write("Mese (in lettere): ");
 
             /* Metodo con Parse() */
-            try
-            {
-                mese = (Mese)Enum.Parse(typeof(Mese), Console.ReadLine());
-            }
-            catch (Exception)
-            {
-                Console.WriteLine($"Input non valido!");
-            }
+            //try
+            //{
+            //    mese = (Mese)Enum.Parse(typeof(Mese), Console.ReadLine());
+            //}
+            //catch (Exception)
+            //{
+            //    Console.WriteLine($"Input non valido!");
+            //}
 
             /* Metodo con TryParse<>() */
             if (!Enum.TryParse<Mese>(Console.ReadLine(), out mese))
             {
-                Console.WriteLine($"Input non valido!");
+                Console.WriteLine("Input non valido!");
             }
             else
             {
@@ -48,24 +44,34 @@ namespace EsNumeroGiorniMese
                     case Mese.Ottobre:
                     case Mese.Dicembre:
                         numeroGiorni = 31;
+                        Console.WriteLine("Numero giorni = {0}", numeroGiorni);
                         break;
-                    case Mese.Febbraio:
-                        Console.Write("Anno: ");
-                        int anno = int.Parse(Console.ReadLine());
-                        if (IsBisestile(anno))
-                            numeroGiorni = 29;
-                        else
-                            numeroGiorni = 28;
+                    case Mese.Febbraio:                        
+                        try
+                        {
+                            Console.Write("Anno: ");
+                            int anno = int.Parse(Console.ReadLine());
+                            if (IsBisestile(anno))
+                                numeroGiorni = 29;
+                            else
+                                numeroGiorni = 28;
+                            Console.WriteLine("Numero giorni = {0}", numeroGiorni);
+                        }
+                        catch (Exception)
+                        {
+                            Console.WriteLine("Anno non valido!");
+                        }
                         break;
                     case Mese.Aprile:
                     case Mese.Giugno:
                     case Mese.Settembre:
                     case Mese.Novembre:
                         numeroGiorni = 30;
+                        Console.WriteLine("Numero giorni = {0}", numeroGiorni);
                         break;
                 }
-                Console.WriteLine("Numero giorni = {0}", numeroGiorni);
-            }           
+                
+            }
         }
 
         /// <summary>

@@ -18,7 +18,7 @@ namespace EsFattoriale
             //}
 
             Matematica.SpostaTorre(4, 1, 3, 2);
-
+            //Console.WriteLine("Produttoria = " + FunzioniUtili.Matematica.Produttoria(1, 5));
         }
     }
 }
