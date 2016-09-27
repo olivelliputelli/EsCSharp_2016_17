@@ -16,10 +16,21 @@ namespace Es1_ClassePersona
 
         [RegularExpression(@"[1-5][A-F]", ErrorMessage ="La sigla {0} non e' valida!")]
         public string ClasseFrequentata { get; set; }
+        public ColoreOcchi Occhi { get; set; }
+    
 
         public override string ToString()
         {
             return $"{this.Cognome} {this.Nome} del {this.AnnoDiNascita} frequenta la {this.ClasseFrequentata} ";
         }
+    }
+
+    public enum ColoreOcchi
+    {
+        Blu,
+        Marroni,
+        Neri,
+        Verdi,
+        NonSpecificato
     }
 }

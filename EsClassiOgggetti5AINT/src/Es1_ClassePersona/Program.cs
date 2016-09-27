@@ -17,6 +17,11 @@ namespace Es1_ClassePersona
             p1.AnnoDiNascita = int.Parse(Console.ReadLine());
             Console.Write("Classe frequentata: ");
             p1.ClasseFrequentata = Console.ReadLine();
+            Console.Write("Colore occhi: ");
+            // In altri tipi di applicazioni avrei una scelta a tendina.
+            ColoreOcchi occhi = ColoreOcchi.NonSpecificato;
+            if(Enum.TryParse<ColoreOcchi>(Console.ReadLine(), out occhi))
+                p1.Occhi = occhi;
 
             var listaProblemi = new List<ValidationResult>();
             var vc = new ValidationContext(p1);
