@@ -17,10 +17,10 @@ namespace EsClassePersona.Model
         [Required(ErrorMessage = "Il {0} e' richiesto.")]
         [MaxLength(60, ErrorMessage = "La lunghezza del {0} deve essere minore di {1}.")]
         public string Cognome { get; set; }
-
+    
         public DateTime DataDiNascita { get; set; }
 
-        public ColoreOcchi Occhi { get; set; }
+        public ColoreOcchi? Occhi { get; set; }
 
         [Range(10,250, ErrorMessage = "{0} deve essere tra {1} e {2} cm.")]
         public int Altezza { get; set; } //in centimetri. es. 182.
@@ -32,14 +32,17 @@ namespace EsClassePersona.Model
         {
             get {
                 int numeroAnni = DateTime.Now.Year - this.DataDiNascita.Year;
-                if (this.DataDiNascita.DayOfYear - DateTime.Now.DayOfYear >= 0)
+
+                if (this.DataDiNascita.DayOfYear - DateTime.Now.DayOfYear > 0)
                     numeroAnni--;
                 return numeroAnni;
             }
         }
 
-        
-
+        public override string ToString()
+        {
+            return $"{this.Cognome} nato il {this.DataDiNascita.ToString("dd MMMM yyyy")} ha {this.Eta} anni.\nOcchi = {this.Occhi}  Altezza = {this.Altezza} cm";
+        }
     }
 
 public enum ColoreOcchi
@@ -51,7 +54,4 @@ public enum ColoreOcchi
         Marroni,
         Neri
     }
-
-
-
 }
