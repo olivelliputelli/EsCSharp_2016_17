@@ -26,6 +26,8 @@ namespace EsClassePersona.Model
         public int Altezza { get; set; } //in centimetri. es. 182.
 
         [RegularExpression(@"[1-5][A-Z][A-F]", ErrorMessage = "Il {0} non e' valido!")]
+
+
         public string CodiceFiscale { get; set; } // Per semplicità solo 3 caratteri. es. 1AD 
 
         public int Eta
@@ -41,7 +43,7 @@ namespace EsClassePersona.Model
 
         public override string ToString()
         {
-            return $"{this.Cognome} nato il {this.DataDiNascita.ToString("dd MMMM yyyy")} ha {this.Eta} anni.\nOcchi = {this.Occhi}  Altezza = {this.Altezza} cm";
+            return $"{this.PersonaId} - {this.Cognome} nato il {this.DataDiNascita.ToString("dd MMMM yyyy")}, adesso ha {this.Eta} anni. Occhi = {this.Occhi}  Altezza = {this.Altezza} cm.";
         }
     }
 
