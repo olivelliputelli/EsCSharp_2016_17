@@ -60,5 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Categorie.sql" />
+    <Build Include="Nazioni.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OperazioniCRUD.sql" />
   </ItemGroup>
 </Project>
