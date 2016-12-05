@@ -7,7 +7,6 @@ namespace Server
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             byte[] buffer = new byte[1024];
@@ -36,6 +35,20 @@ namespace Server
                     messaggioRicevuto += charRicevuti[i];
                 }                
                 Console.WriteLine(messaggioRicevuto);
+                switch (messaggioRicevuto.ToUpper())
+                {
+                    case "NU":
+                        sckConnessione.Send(Encoding.ASCII.GetBytes("Nuovo Utente***"));
+                        break;
+                    case "LU":
+                        sckConnessione.Send(Encoding.ASCII.GetBytes("Lista Utenti***"));
+                        break;
+                    default:
+                        sckConnessione.Send(Encoding.ASCII.GetBytes("***"));
+                        break;
+                }
+
+
             } while (messaggioRicevuto.ToUpper() != "F");
 
 

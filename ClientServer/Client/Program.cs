@@ -14,7 +14,10 @@ namespace Client
         {
             Socket sck;
             byte[] messaggioByte = new byte[1024];
-            string messaggio = "";
+            byte[] messaggioByteRicevuti = new byte[1024];
+            string charRicevuti = "";
+            string messaggio = "", messaggioRicevuto = "";
+            int numeroBytesRicevuti = 0;
             sck = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
             sck.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 12345));
@@ -25,6 +28,18 @@ namespace Client
 
                 messaggioByte = Encoding.ASCII.GetBytes(messaggio);
                 sck.Send(messaggioByte);
+
+                // Ascolto risposta
+                messaggioRicevuto = "";
+                numeroBytesRicevuti = sck.Receive(messaggioByteRicevuti);
+
+                charRicevuti = Encoding.ASCII.GetString(messaggioByteRicevuti);
+
+                for (int i = 0; i < numeroBytesRicevuti; i++)
+                {
+                    messaggioRicevuto += charRicevuti[i];
+                }
+                Console.WriteLine(messaggioRicevuto);
 
             } while (messaggio.ToUpper() != "F");
 
